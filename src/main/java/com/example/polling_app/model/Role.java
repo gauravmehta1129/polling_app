@@ -1,11 +1,13 @@
 package com.example.polling_app.model;
 
+import lombok.Data;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "roles")
+@Data
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

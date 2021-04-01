@@ -32,7 +32,7 @@ public class User{
 
     @NotBlank
     @Size(max=15)
-    private String userName;
+    private String username;
 
     @NaturalId
     @NotBlank
@@ -55,7 +55,7 @@ public class User{
 
     public User(String name, String username, String email, String password) {
         this.name = name;
-        this.userName = username;
+        this.username = username;
         this.email = email;
         this.password = password;
     }
